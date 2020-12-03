@@ -1,0 +1,152 @@
+/****||- google fonts yeey(I no longer like Montserrat..) -||****/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i&display=swap&subset=latin-ext');
+
+
+
+
+/****||- global settings, mobile first -||****/
+
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+	margin: 0;
+   padding: 0;
+}
+
+html, body {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 92vh;
+	/* overflow-y: auto; */
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	/* overflow: hidden; */
+}
+
+body {
+	background-color: #fff;
+	
+	padding: .7rem;
+}
+
+h4 {
+	font-family: 'PT Serif', serif;
+	font-weight: 400;
+	font-size: .8rem;
+	text-align: left;
+	
+	color: #fff;
+}
+	
+
+#container{
+	position: relative;
+	height: 80%;
+	width: 100%;
+
+	border: 3px solid #333;
+	/* border-radius: .7rem; */
+
+	overflow: hidden;
+
+	background: url("bbg.svg");
+	background-color: #000;
+	background-repeat: repeat;
+	background-position: 0 0;
+	background-size: auto 100%;
+
+	animation: animatedBackground 20s linear infinite;
+}
+
+@keyframes animatedBackground {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: 0 5000px;
+	}
+}
+
+#left-wall {
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 1rem;
+	
+	top: 0;
+	left: 0;
+	
+	transform-origin: left;
+	/* transform: scale(4, 1); */
+	
+	background: linear-gradient(90deg, rgba(43,85,128,1) 0%, rgba(55,55,101,1) 35%, rgba(12,10,42,1) 100%);
+}
+
+#right-wall {
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 1rem;
+	
+	top: 0;
+	right: 0;
+	
+	transform-origin: right;
+	/* transform: scale(4, 1); */
+	
+	background: linear-gradient(270deg, rgba(43,85,128,1) 0%, rgba(55,55,101,1) 35%, rgba(12,10,42,1) 100%);
+}
+
+
+
+#hero {
+  position: absolute;
+  height: 2rem;
+  width: 2rem;
+  
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  
+  background: #fff;
+  border-radius: 0 2rem 2rem 2rem;
+  
+  /* transition: transform .1s ease; */
+}
+
+
+.obsticale {
+	display: block;
+	position: absolute;
+	height: .5rem;
+	width: 40%;
+	
+	top: 0;
+	left: 30%;
+	
+	background-color: #777;
+}
+
+
+
+
+
+
+/* dev tools */
+
+#status {
+	content: "2";
+	display: block;
+	position: absolute;
+	bottom: 0rem;
+	left: .75rem;
+	
+	padding: .3rem .7rem;
+	
+	background-color: rgba(0,0,0,.7);
+	border-radius: .7rem;
+}
